@@ -30,12 +30,25 @@ async def test(ctx):
 async def mondaySielWest():
     channel = bot.get_channel(864207932660908083)
     print('yesssss')
-    await channel.send("Siel West in ONE hour")
+    await channel.send("Siel West Siege is starting in ONE hour")
 
-@aiocron.crontab('25 0 * * 2', local_date)
+
+@aiocron.crontab('30 1 * * 2', local_date)
 async def mondaySielWest():
     channel = bot.get_channel(864207932660908083)
     print('yesssss')
-    await channel.send("Siel West in ONE hour")
+    await channel.send("Siel West Siege is starting in 30 minutes")
+
+@aiocron.crontab('45 1 * * 2', local_date)
+async def mondaySielWest():
+    channel = bot.get_channel(864207932660908083)
+    print('yesssss')
+    await channel.send("Siel West Siege is starting in 15 minutes")
+
+@aiocron.crontab('0 2 * * 2', local_date)
+async def mondaySielWest():
+    channel = bot.get_channel(864207932660908083)
+    print('yesssss')
+    await channel.send("Siel West Siege has started")
 
 bot.run(BOT_TOKEN)
